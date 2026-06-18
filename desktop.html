@@ -17,7 +17,7 @@
  <p class="lk"><a href="mobile.html">📱 მობილურის ვერსია →</a></p>
  <script>
   var f=document.getElementById('f');
-  function fit(){try{f.style.height=f.contentWindow.document.body.scrollHeight+'px';}catch(e){f.style.height='2200px';}}
-  f.addEventListener('load',function(){fit();setTimeout(fit,400);setTimeout(fit,1200);});
+  function fit(){try{f.style.height=(f.contentWindow.document.body.scrollHeight+80)+'px';}catch(e){f.style.height='3000px';}}catch(e){f.style.height='2200px';}}
+  f.addEventListener('load',function(){fit();setTimeout(fit,400);setTimeout(fit,1200);setTimeout(fit,2500);});window.addEventListener('resize',fit);
  </script>
 </body></html>
